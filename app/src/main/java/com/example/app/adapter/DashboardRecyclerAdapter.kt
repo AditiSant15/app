@@ -1,6 +1,7 @@
 package com.example.app.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +13,8 @@ import java.util.ArrayList
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
+import com.example.app.activity.DescriptionActivity
+import com.squareup.picasso.Picasso
 
 class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Movie>) : RecyclerView.Adapter<DashboardRecyclerAdapter.DashboardViewHolder>(){
     override fun onCreateViewHolder(
@@ -35,12 +38,15 @@ class DashboardRecyclerAdapter(val context: Context, val itemList: ArrayList<Mov
         val movie = itemList[position]
         holder.txtMovieName.text = movie.movieName
         holder.txtMovieAuthor.text = movie.movieAuthor
-        holder.txtMovieCost.text = movie.movieCost
+        holder.txtMovieCost.text = movie.moviePrice
         holder.txtMovieRating.text = movie.movieRating
-        holder.imgMovieImage.setImageResource(movie.movieImage)
+        //holder.imgMovieImage.setImageResource(movie.movieImage)
+        Picasso.get().load(movie.movieImage).error(R.drawable.default_image).into(holder.imgMovieImage)
 
         holder.llContent.setOnClickListener{
-            Toast.makeText(context,"Clicked on ${holder.txtMovieName.text}",Toast.LENGTH_SHORT).show()
+            val intent = Intent(context, DescriptionActivity::class.java)
+            intent.putExtra("movie_id",movie.movieId)
+            context.startActivity(intent)
         }
     }
 

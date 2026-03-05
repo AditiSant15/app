@@ -1,10 +1,11 @@
 package com.example.app.model
 
 data class Movie(
+    val movieId: String,
     val movieName: String,
     val movieAuthor: String,
-    val movieCost: String,
     val movieRating: String,
-    val movieImage: Int
+    val moviePrice: String,
+    val movieImage: String
 
 )

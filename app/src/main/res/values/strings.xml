@@ -1,16 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">app</string>
+
+    <string name="app_name">App</string>
+
     <string name="dashboard">Dashboard</string>
-    <string name="favourites">Favourites\n</string>
-    <string name="profile">Profile\n</string>
-    <string name="about_app">About App\n</string>
-    <string name="Navigation_Drawer">Navigation Drawer\n</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="about_app">About App</string>
+
+    <string name="navigation_drawer">Navigation Drawer</string>
     <string name="open_drawer">Open Drawer</string>
     <string name="close_drawer">Close Drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
     <string name="dashboard_fragment">Dashboard Fragment</string>
     <string name="favourites_fragment">Favourites Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
     <string name="about_app_fragment">About App Fragment</string>
+    <string name="action_sort">Sort\n</string>
+
 </resources>

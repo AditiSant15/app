@@ -2,7 +2,7 @@
 <resources>
     <item name="txtMovieName" type="id">Movie Name</item>
     <item name="txtMovieAuthor" type="id">Movie Author</item>
-    <item name="txtMovieCost" type="id">Movie Cost</item>
+    <item name="txtMoviePrice" type="id">Movie Cost</item>
     <item name="txtMovieRating" type="id">Movie Rating</item>
     <item name="imgMovieImage" type="id">Movie Image</item>
 </resources>
